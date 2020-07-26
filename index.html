@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <style>
+        body{
+            background-color:bisque;
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+        ul>li{
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        div>button{
+            margin-left:10px;
+        }
+        .btn{
+            margin-left: 10px;
+        }
+        .listitem{
+            list-style-type:none;
+            font-style:italic;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>ToDo List App</h1>
+    </div>
+    <div id='todo-items'>
+        <input type="text" id='todo-item' placeholder="Enter ToDo">
+        <button id='add-todo' onclick="addTodo()"> Add Todo Item</button>
+        <button id='delete-all' onclick="deleteAll()">Delete All </button>
+    </div>
+    <div>
+        <h3>To Do items</h3>
+        <ul id="list">
+            
+        </ul>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
